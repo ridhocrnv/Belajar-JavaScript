@@ -1,0 +1,37 @@
+body {
+    background-color: aqua;
+    font-family: "Poppins";
+}
+
+h1 {
+    text-align: center;
+}
+
+.biodata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media li {
+    list-style-type: none;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: black;
+}
