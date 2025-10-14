@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+}
+
+#screenfix {
+    font-family: 'Poppins';
+    font-size: 58px;
+    font-weight: 600;
+}
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#btn-add {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    background-color: #3772FF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-add:hover {
+    background-color: #2a58c1; /* Warna yang lebih gelap saat kursor di atasnya */
+}
+
+#btn-less {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    background-color: #080708;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-less:hover {
+    background-color: #2c2b2e; /* Warna yang lebih gelap saat kursor di atasnya */
+}
+
+
+#btn-reset {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    background-color: #DF2935;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-reset:hover {
+    background-color: #a82029; /* Warna yang lebih gelap saat kursor di atasnya */
+}
