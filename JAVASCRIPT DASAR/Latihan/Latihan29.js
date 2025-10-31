@@ -48,4 +48,4 @@ for (const item of daftarSkor) {
     total = total + item;
 }
 
-console.log(`Total skor adalah: ${total}`);
+console.log(`Total skor adalah: ${total}`);yk
