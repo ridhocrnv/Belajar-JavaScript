@@ -26,4 +26,4 @@ menggunakannya) let polaKodePos = /...;
 
 */
 
-let polaKodePos = /^d\{5}$/;
+let polaKodePos = /^\d{5}$/;
