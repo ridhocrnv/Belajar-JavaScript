@@ -58,8 +58,36 @@ RegExp adalah bahasa. Ini beberapa "kata" pertamanya:
         ^: Awal string. (Contoh: /^Halo/ -> "Halo" harus di awal).
         $: Akhir string. (Contoh: /com$/ -> "com" harus di akhir).
 
+4. Implementasi & Problem Solving
+
+Masalah: "Saya ingin membuat pola untuk memvalidasi username. Username harus dimulai 
+dengan huruf dan hanya boleh berisi huruf kecil dan angka."
+
+Pola Pikir (Problem Solving):
+
+1. Tujuan: Cetakan (pola) untuk username.
+2. Aturan 1: "Harus dimulai dengan huruf"
+    "Dimulai dengan": ^
+    "huruf" (kecil): [a-z]
+    Gabungan: /^[a-z]/
+3. Aturan 2: "Sisanya HANYA boleh huruf kecil dan angka"
+    "huruf kecil atau angka": [a-z0-9]
+    Boleh ada nol atau lebih dari karakter ini: *
+    Gabungan: [a-z0-9]*
+4. Aturan 3: "Tidak boleh ada yang lain setelah itu"
+    Pola harus selesai di akhir string: $
+5. Gabungkan Semuanya: /^[a-z][a-z0-9]*$/
 
 
+Contoh Pola Sederhana:
+    /halo/: Mencari "halo" di mana saja.
+
+    /^\d+$/: String ini harus berawal (^), berisi satu atau lebih digit (\d+), dan berakhir 
+    ($). (Contoh: "123" -> Lolos. "123a" -> Gagal).
+
+    /com$/i: String ini harus berakhir dengan "com", "COM", "Com", dll. (karena ada /i).
 
 
 */
+
+let polaUsername = /^[a-z][a-z0-9]*$/
