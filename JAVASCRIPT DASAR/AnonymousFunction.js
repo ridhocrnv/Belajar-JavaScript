@@ -13,3 +13,4 @@ const ucapSelamatTinggal = function (nama) {
 };
 
 ucapSelamatTinggal("Alex");
+ucapSelamatTinggal("Alex");
